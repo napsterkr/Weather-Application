@@ -1,5 +1,6 @@
 package com.example.myassignment.utility
 
+import android.annotation.SuppressLint
 import android.view.View
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
@@ -25,6 +26,7 @@ object BindingAdapters {
         view.visibility = if ((size != null && size > 0) || goneVisibleLoaderVisible!!) View.GONE else View.VISIBLE
     }
 
+    @SuppressLint("SetTextI18n")
     @JvmStatic
     @BindingAdapter( value = ["cityName", "countryName"],requireAll = true)
     fun concatCityAndCountry(view: TextView, cityName: String?, countryName: String?) {
@@ -39,6 +41,7 @@ object BindingAdapters {
     }
 
 
+    @SuppressLint("SetTextI18n")
     @JvmStatic
     @BindingAdapter("weatherData")
     fun weatherData(view: TextView, weather: WeatherEntity) {

@@ -37,7 +37,7 @@ class HomeActivityViewModelTest {
                 HttpURLConnection.HTTP_OK
             )
         )
-        homeListActivityViewModel.fetchToDoListFromServer()
+        homeListActivityViewModel.fetchWeatherDataFromServer()
 
         //Todo proper solution is to be implemented
         Thread.sleep(5000)

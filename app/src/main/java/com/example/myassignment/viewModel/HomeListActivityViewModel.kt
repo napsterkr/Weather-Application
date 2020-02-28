@@ -44,7 +44,7 @@ class HomeListActivityViewModel(private val service: RetrofitModule) : ViewModel
     }
     // function to fetch to do List from server
     @ExperimentalCoroutinesApi
-    fun fetchToDoListFromServer() {
+    fun fetchWeatherDataFromServer() {
         progressBarLodingStatus.set(true)
         CoroutineScope(Dispatchers.IO).launch {
             val response = service.getApiService().getWeatherData(/*122007,"in","a864a9946bb06d4163ab0c95bf01e465"*/)
@@ -77,7 +77,7 @@ class HomeListActivityViewModel(private val service: RetrofitModule) : ViewModel
     @ExperimentalCoroutinesApi
     fun onReloadClick() {
 
-        fetchToDoListFromServer()
+        fetchWeatherDataFromServer()
     }
 
     fun cancelAllRequests() = coroutineContext.cancel()

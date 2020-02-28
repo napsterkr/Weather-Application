@@ -36,7 +36,7 @@ class HomeActivity : AppCompatActivity() {
     @ExperimentalCoroutinesApi
     private fun checkAndLoadToDoList() {
         if (viewModel.weatherApiResponeDataForUI.get() == null || viewModel.weatherApiResponeDataForUI.get().isNullOrEmpty() )
-            viewModel.fetchToDoListFromServer()
+            viewModel.fetchWeatherDataFromServer()
 
     }
 

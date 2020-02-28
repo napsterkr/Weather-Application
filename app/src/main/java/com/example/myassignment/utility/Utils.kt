@@ -9,12 +9,12 @@ object Utils {
     @JvmStatic
     fun parseMilliseconds(millis: Long): String {
         // New date object from millis
-        var date = Date(millis)
+        val date = Date(millis)
 // formattter
-        var formatter = SimpleDateFormat("HH:mm:ss")
+        val formatter = SimpleDateFormat("HH:mm:ss")
         formatter.setTimeZone(TimeZone.getTimeZone("GMT"))
 // Pass date object
-        var formatted = formatter.format(date)
+        val formatted = formatter.format(date)
 
         return formatted
     }
