@@ -1,4 +1,4 @@
-package com.example.myassignment
+package com.example.myassignment.di
 
 import com.example.myassignment.viewModel.HomeListActivityViewModel
 import org.koin.android.viewmodel.dsl.viewModel

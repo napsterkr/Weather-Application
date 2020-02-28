@@ -6,14 +6,12 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.myassignment.BR
 import com.example.myassignment.R
-import com.example.myassignment.RetrofitModule
+import com.example.myassignment.di.RetrofitModule
 import com.example.myassignment.dataModel.ListEntity
 import com.example.myassignment.dataModel.WeatherApiResponeData
 import com.example.myassignment.interfaces.OnToDoItemClickListner
 import kotlinx.coroutines.*
 import me.tatarka.bindingcollectionadapter2.ItemBinding
-import okhttp3.internal.notify
-import okhttp3.internal.notifyAll
 import retrofit2.HttpException
 import kotlin.coroutines.CoroutineContext
 

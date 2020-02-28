@@ -1,7 +1,7 @@
-package com.example.myassignment
+package com.example.myassignment.application
 
 import android.app.Application
-import com.example.myassignment.CoinModule.viewModelModule
+import com.example.myassignment.di.CoinModule.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.loadKoinModules
 import org.koin.core.context.startKoin

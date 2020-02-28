@@ -1,7 +1,8 @@
 package com.example.myassignment
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.example.myassignment.CoinModule.viewModelModule
+import com.example.myassignment.di.CoinModule.viewModelModule
+import com.example.myassignment.di.RetrofitModule
 import com.example.myassignment.utils.MockResponse
 import com.example.myassignment.viewModel.HomeListActivityViewModel
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package com.example.myassignment
+package com.example.myassignment.di
 
 import com.example.myassignment.interfaces.ToDoApi
 import com.google.gson.Gson

@@ -1,10 +1,9 @@
-package com.example.myassignment
+package com.example.myassignment.utility
 
 import android.view.View
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.example.myassignment.dataModel.WeatherEntity
-import com.example.myassignment.utility.Utils
 
 object BindingAdapters {
 
