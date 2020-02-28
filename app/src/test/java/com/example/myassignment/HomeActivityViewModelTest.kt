@@ -42,7 +42,7 @@ class HomeActivityViewModelTest {
         //Todo proper solution is to be implemented
         Thread.sleep(5000)
 
-        Assert.assertTrue(homeListActivityViewModel.weatherApiResponeDataForUI.get()?.cod.equals("200"))
+        Assert.assertTrue(homeListActivityViewModel.weatherApiResponeDataFromServer.get()?.cod.equals("200"))
         Dispatchers.resetMain()
     }
 

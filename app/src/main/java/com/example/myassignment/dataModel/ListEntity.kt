@@ -40,7 +40,7 @@ public data class WindEntity(
     val speed: Double,
     @Expose
     @SerializedName("deg")
-    var deg: Int
+    var deg: Double
 )
 
 public data class CloudsEntity(
@@ -79,17 +79,17 @@ public data class MainEntity(
     val temp_max: Double,
     @Expose
     @SerializedName("pressure")
-    var pressure: Int,
+    var pressure: Double,
     @Expose
     @SerializedName("sea_level")
-    var sea_level: Int,
+    var sea_level: Double,
     @Expose
     @SerializedName("grnd_level")
-    var grnd_level: Int,
+    var grnd_level: Double,
     @Expose
     @SerializedName("humidity")
-    var humidity: Int,
+    var humidity: Double,
     @Expose
     @SerializedName("temp_kf")
-    var temp_kf: Int
+    var temp_kf: Double
 )
